@@ -54,4 +54,9 @@ public class Snack {
   public void setVendingMachineId(int vendingMachineId) {
     this.vendingMachineId = vendingMachineId;
   }
+
+  // Methods
+  public void buy(int quantityBought) {
+    this.quantity -= quantityBought;
+  }
 }
