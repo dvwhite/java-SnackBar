@@ -14,7 +14,9 @@ public class Snack {
     this.maxId = maxId;
     this.id = this.maxId + 1;
     this.name = name;
+    this.quantity = quantity;
     this.cost = cost;
+    this.vendingMachineId = vendingMachineId;
   }
 
   // Getters
@@ -58,5 +60,9 @@ public class Snack {
   // Methods
   public void buy(int quantityBought) {
     this.quantity -= quantityBought;
+  }
+
+  public void addQuantity(int quantity) {
+    this.quantity += quantity;
   }
 }
