@@ -36,5 +36,10 @@ public class Main {
     Snack soda = new Snack(maxSnackId, "Soda", 24, 2.50, drinkVending.getId());
     Snack water = new Snack(maxSnackId, "Water", 20, 2.75, drinkVending.getId());
 
+    // Customer purchases
+    customer1.buySnack(soda.getCost(), 3);
+    soda.buy(3);
+    System.out.println(customer1.getName() + " cash on hand " + customer1.getCashOnHand());
+    System.out.println("Quantity of " + soda.getName() + " is " + soda.getQuantity());
   }
 }
