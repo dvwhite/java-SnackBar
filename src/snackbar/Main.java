@@ -126,11 +126,15 @@ public class Main {
     System.out.println("Quantity: " + chips.getQuantity());
     System.out.println("Total Cost: " + df.format(chips.getTotalCost(chips.getQuantity())));
 
+    System.out.println("");
+
     System.out.println("Snack: " + chocolateBar.getName());
     machineName = findVendingMachine(chocolateBar.getVendineMachineId(), vendingMachines);
     System.out.println("Vending Machine: " + machineName);
     System.out.println("Quantity: " + chocolateBar.getQuantity());
     System.out.println("Total Cost: " + df.format(chocolateBar.getTotalCost(chocolateBar.getQuantity())));
+
+    System.out.println("");
 
     System.out.println("Snack: " + pretzel.getName());
     machineName = findVendingMachine(pretzel.getVendineMachineId(), vendingMachines);
@@ -138,11 +142,15 @@ public class Main {
     System.out.println("Quantity: " + pretzel.getQuantity());
     System.out.println("Total Cost: " + df.format(pretzel.getTotalCost(pretzel.getQuantity())));
 
+    System.out.println("");
+
     System.out.println("Snack: " + soda.getName());
     machineName = findVendingMachine(soda.getVendineMachineId(), vendingMachines);
     System.out.println("Vending Machine: " + machineName);
     System.out.println("Quantity: " + soda.getQuantity());
     System.out.println("Total Cost: " + df.format(soda.getTotalCost(soda.getQuantity())));
+
+    System.out.println("");
 
     System.out.println("Snack: " + water.getName());
     machineName = findVendingMachine(water.getVendineMachineId(), vendingMachines);
