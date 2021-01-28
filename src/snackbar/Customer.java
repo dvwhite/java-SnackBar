@@ -38,7 +38,7 @@ public class Customer {
     this.cashOnHand += cash;
   }
 
-  public void buySnack(double priceOfSnack) {
-    this.cashOnHand -= priceOfSnack;
+  public void buySnack(double priceOfSnack, int quantity) {
+    this.cashOnHand -= (priceOfSnack * quantity);
   }
 }
