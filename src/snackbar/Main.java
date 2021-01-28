@@ -64,5 +64,26 @@ public class Main {
     customer1.addCashOnHand(10);
     System.out.println(customer1.getName() + " cash on hand " + customer1.getCashOnHand());
 
+    // Blank line
+    System.out.println("");
+
+    customer1.buySnack(chocolateBar.getCost(), 1);
+    chocolateBar.buy(1);
+    System.out.println(customer1.getName() + " cash on hand " + customer1.getCashOnHand());
+    System.out.println("Quantity of " + chocolateBar.getName() + " is " + chocolateBar.getQuantity());
+
+    // Blank line
+    System.out.println("");
+
+    pretzel.addQuantity(12);
+    System.out.println("Quantity of " + pretzel.getName() + " is " + pretzel.getQuantity());
+
+    // Blank line
+    System.out.println("");
+
+    customer2.buySnack(pretzel.getCost(), 3);
+    pretzel.buy(3);
+    System.out.println(customer2.getName() + " cash on hand " + customer2.getCashOnHand());
+    System.out.println("Quantity of " + pretzel.getName() + " is " + pretzel.getQuantity());
   }
 }
